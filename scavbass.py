@@ -7,11 +7,10 @@ from subprocess import call
 import argparse
 import httplib2
 
-from apiclient.discovery import build
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.file import Storage
 from oauth2client.tools import run_flow, argparser
-
+from apiclient.discovery import build
 # Parse the command-line arguments (e.g. --noauth_local_webserver)
 parser = argparse.ArgumentParser(parents=[argparser])
 flags = parser.parse_args()
