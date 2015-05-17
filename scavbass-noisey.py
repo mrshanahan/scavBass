@@ -83,4 +83,4 @@ while True:
             message = '\n'.join([INTRO, content, OUTRO])
             print >> sys.stderr, 'Recording message:'
             print >> sys.stderr, message
-            call(["/usr/bin/espeak", "-w", "wavs/message_%d.wav" % int(time.time()), message])
+            call(["/usr/bin/espeak", message])
